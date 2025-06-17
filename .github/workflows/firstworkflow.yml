@@ -1,0 +1,16 @@
+name: First Workflow
+on: push
+
+jobs: 
+    First_Job:
+        runs-on: ubuntu:latest
+        steps:
+            - name: Checkout
+              uses: action/checkout@v4
+            - name: Print Message
+              run: echo "Hello World"
+            - name: List Fles
+              run: ls
+            - name: Read File content
+              run: cat index.html
+
