@@ -7,7 +7,7 @@ jobs:
         steps:
             - name: Checkout
               uses: action/checkout@v4
-            - name: Print Message
+            - name: Print Message Hello World
               run: echo "Hello World"
             - name: List Fles
               run: ls
